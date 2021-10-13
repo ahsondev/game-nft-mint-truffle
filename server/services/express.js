@@ -12,11 +12,11 @@ module.exports = function expressApp(routes) {
   app.use(compression())
   app.use(bodyParser.urlencoded({ extended: false }))
   app.use(bodyParser.json())
-  app.use(express.static(resolvePath(__dirname, './../build')))
+  app.use(express.static(resolvePath(__dirname, '../../build')))
   app.use('/api', routes)
   app.get('/*', (req, res) => {
     const contents = fs.readFileSync(
-      resolvePath(__dirname, './../build/index.html'),
+      resolvePath(__dirname, '../../build/index.html'),
       'utf8',
     )
     res.send(contents)

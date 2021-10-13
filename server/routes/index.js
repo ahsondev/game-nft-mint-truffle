@@ -5,4 +5,4 @@ const router = new Router()
 
 router.post('/index', Controllers.Main.index)
 
-module.exports = router
+module.exports = router;
