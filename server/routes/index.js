@@ -3,6 +3,6 @@ const Controllers = require('../controllers')
 
 const router = new Router()
 
-router.post('/index', Controllers.Main.subscribeSendgridEmail)
+router.post('/index', Controllers.Main.index)
 
 module.exports = router
