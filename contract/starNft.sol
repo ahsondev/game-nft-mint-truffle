@@ -49,7 +49,7 @@ contract StarNft is ERC721Enumerable, VRFConsumerBase, Ownable {
         address _VRFCoordinator,
         address _LinkToken,
         bytes32 _keyhash
-    ) ERC721("ICEBERG", "ICE") VRFConsumerBase(_VRFCoordinator, _LinkToken) {
+    ) ERC721("StarNft", "Star") VRFConsumerBase(_VRFCoordinator, _LinkToken) {
         setBaseURI(baseURI);
         setMaxElementCount(maxAmount);
         VRFCoordinator = _VRFCoordinator;
